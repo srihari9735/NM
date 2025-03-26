@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srihari V - Professional Resume</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --light-bg: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .language-skills {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 600px) {
+            .resume-container {
+                padding: 20px;
+                margin: 10px;
+            }
+
+            .language-skills {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="header">
+            <h1>SRIHARI V</h1>
+            <div class="contact-info">
+                <p>📞 9080166174 | ✉️ varunsrihari7@gmail.com | 📍 Hosur</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">ABOUT ME</h2>
+            <p>I am a pursuing graduate with a strong foundation and a passion for applying my technical skills in real-world scenarios. My academic experience includes hands-on projects, where I developed expertise in areas of Python, Java, Data Structures, and Web Development. I have excellent problem-solving abilities and thrive in collaborative environments. I am excited about starting my career and making a positive impact in the tech industry.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">EDUCATION</h2>
+            <div>
+                <strong>B.Sc Artificial Intelligence and Machine Learning</strong>
+                <p>KPR College of Arts Science and Research</p>
+                <p>Maharishi Vidya Mandir - HSC (Percentage: 70%)</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">TECHNICAL SKILLS</h2>
+            <div class="skill-tags">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Web Development</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">AREA OF INTEREST</h2>
+            <div>
+                <h3>Software Development</h3>
+                <p>Passionate about software development, with a strong interest in designing and building scalable, high-performance applications. I enjoy exploring new technologies, optimizing system efficiency, and continuously improving user experiences through innovative solutions in both web and mobile development.</p>
+                
+                <h3>Data Structures and Algorithms</h3>
+                <p>I have a strong interest in understanding and optimizing algorithms and data structures. This area excites me as it provides solutions to complex problems and enhances the efficiency of software, which is critical in building scalable and high-performance applications.</p>
+                
+                <h3>Web Development</h3>
+                <p>I am enthusiastic about creating dynamic, user-friendly websites and applications. With experience in front-end technologies like HTML, CSS, JavaScript, and frameworks such as React, I aim to build responsive and visually appealing websites while ensuring a smooth user experience and performance optimization.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">EXTRACURRICULAR ACTIVITIES</h2>
+            <ul>
+                <li>Engaged in algorithmic problem-solving and coding challenges, enhancing problem-solving and programming skills.</li>
+                <li>Participated in multiple hackathons, developing solutions under tight deadlines. Projects uploaded on GitHub.</li>
+                <li>Participated in online coding competitions.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">LANGUAGES</h2>
+            <div class="language-skills">
+                <div>English</div>
+                <div>Tamil</div>
+                <div>Hindi</div>
+                <div>Telugu</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Optional: Add interactivity or dynamic elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const skillTags = document.querySelectorAll('.skill-tag');
+            
+            skillTags.forEach(tag => {
+                tag.addEventListener('mouseover', (e) => {
+                    e.target.style.transform = 'scale(1.1)';
+                    e.target.style.backgroundColor = '#3498db';
+                });
+                
+                tag.addEventListener('mouseout', (e) => {
+                    e.target.style.transform = 'scale(1)';
+                    e.target.style.backgroundColor = '#2c3e50';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
